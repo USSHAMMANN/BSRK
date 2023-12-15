@@ -1,0 +1,21 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Authorization";
+}
+<link rel="stylesheet" href="~/css/UserStyle.css" asp-append-version="true" />
+
+<div class="container-reg">
+    <div class="tab-content">
+        <form class="form-bg" asp-action="AuthorizationUser" asp-controller="User" method="post">
+            <div class="form-group">
+                <label for="UserName">Username</label>
+                <input asp-for="UserName" type="text" class="form-control" id="UserName">
+            </div>
+            <div class="form-group">
+                <label for="PasswordHash">Password</label>
+                <input asp-for="PasswordHash" type="password" class="form-control" id="PasswordHash">
+            </div>
+            <button type="submit" class="btn btn-outline-light rounded w-100">Submit</button>
+        </form>
+    </div>
+</div>

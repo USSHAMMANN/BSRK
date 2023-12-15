@@ -1,0 +1,22 @@
+﻿
+.container-reg {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-content {
+    width: 50%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 55px;
+    border-style: solid;
+    background-color: #3b3b3b;
+    color:aliceblue;
+
+}
+

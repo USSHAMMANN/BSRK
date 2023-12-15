@@ -1,0 +1,50 @@
+﻿@model TaskModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form class="bg-transparent" asp-action="TaskEdit" asp-controller="Task" asp-route-id="@Model.Id" >
+                <div>
+                    <input asp-for="UserId" type="hidden" class="form-control" id="description">
+                </div>
+                <div class="form-group">
+                    <label class="display-6" for="description">Description</label>
+                    <input asp-for="Description" type="text" class="form-control" id="description">
+                </div>
+                <div class="form-group">
+                    <label class="display-6" for="priority">Priority</label>
+                    <select asp-for="Priority" class="form-control" id="priority">
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="display-6" for="time">Time</label>
+                    <input asp-for="Timeframe" class="form-control" type="date" id="time">
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label">Done true</label>
+                    <input asp-for="Done" type="radio" class="custom-radio" value="true" name="Done" />
+                    <label class="col-form-label">Done false</label>
+                    <input asp-for="Done" type="radio" class="custom-radio" value="false" name="Done" />
+                </div>
+                <div class="form-group mt-3">
+                    <button type="submit" class="btn btn-outline-light rounded w-100">Update</button>
+                </div>
+            </form>
+            <form class="bg-transparent" asp-action="DeleteTask" asp-controller="Task" asp-route-id="@Model.Id">
+                <div>
+                    <input asp-for="UserId" type="hidden" class="form-control" id="description">
+                </div>
+                <button type="submit" class="btn btn-outline-danger rounded w-100" >Delete</button>
+            </form>
+        </div>
+    </div>
+</div>
+

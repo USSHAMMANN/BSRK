@@ -1,0 +1,17 @@
+C:\pubweb\ToDoList.exe
+C:\pubweb\appsettings.Development.json
+C:\pubweb\appsettings.json
+C:\pubweb\ToDoList.dll
+C:\pubweb\ToDoList.deps.json
+C:\pubweb\ToDoList.runtimeconfig.json
+C:\pubweb\ToDoList.pdb
+C:\pubweb\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\pubweb\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\pubweb\Microsoft.IdentityModel.Logging.dll
+C:\pubweb\Microsoft.IdentityModel.Protocols.dll
+C:\pubweb\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\pubweb\Microsoft.IdentityModel.Tokens.dll
+C:\pubweb\Newtonsoft.Json.dll
+C:\pubweb\Refit.dll
+C:\pubweb\System.IdentityModel.Tokens.Jwt.dll
+C:\pubweb\System.Text.Json.dll
